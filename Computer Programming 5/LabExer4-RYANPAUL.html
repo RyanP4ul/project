@@ -1,0 +1,62 @@
+<!-- Activity 1 Creating an Internal JS Script
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+		</script>
+    </body>
+</html>
+ -->
+ 
+<!-- Activity 2 Declaring the Function
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+		    function find_longest_word(str)
+            {
+                var array1 = str.match(/\w[a-z]{0,}/gi);
+                var result = array1[0];
+                for(var x = 1 ; x < array1.length ; x++)
+                {
+                    if(result.length < array1[x].length)
+                    {
+                        result = array1[x];
+                    } 
+                }
+				return result;
+			}
+		</script>
+    </body>
+</html>
+-->
+
+<!-- Displaying the Output -->
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+		    function find_longest_word(str)
+            {
+                var array1 = str.match(/\w[a-z]{0,}/gi);
+                var result = array1[0];
+                for(var x = 1 ; x < array1.length ; x++)
+                {
+                    if(result.length > array1[x].length)
+                    {
+                        result = array1[x];
+                    } 
+                }
+				return result;
+			}
+			var stringVal = prompt("Enter a string value");
+			alert(find_longest_word(stringVal));
+		</script>
+    </body>
+</html>

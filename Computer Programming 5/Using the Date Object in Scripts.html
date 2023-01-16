@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Using the Date Object in Script</title>
+</head>
+<body>
+
+<script>
+    // Note: JavaScript date setFullYear counts months from 0 to 11.
+
+    const date = new Date();
+
+    // Current Date
+    document.writeln(date + "<br>");
+
+    // My Birthday Date
+    date.setFullYear(2004, 11, 21) // Year, Month, Day
+    document.writeln(date + "<br>"); // December 21, 2004
+
+    // Two Date Important
+
+    // Christmas
+    date.setFullYear(2022, 11, 25);
+    document.writeln(date + "<br>"); // December 25, 2022
+
+    // New Year
+    date.setFullYear(2022, 11, 31);
+    document.writeln(date); // December 31, 2022
+</script>
+
+</body>
+</html>
